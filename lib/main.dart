@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipebox/screens/Onboarding_screen.dart';
 
 void main() {
   runApp(const App());
@@ -13,8 +14,10 @@ class App extends StatelessWidget {
       title: 'Recipe Box',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          colorScheme:
-              ColorScheme.fromSwatch().copyWith(secondary: Colors.orange)),
+        colorScheme:
+            ColorScheme.fromSwatch().copyWith(secondary: Colors.orange),
+      ),
+      home: OnboardingScreen(),
     );
   }
 }
